@@ -41,17 +41,21 @@ export default function Home() {
         focus-within:shadow-lg max-w-md rounded-full border
          border-gray-200 px-5 py-3 items-center sm:max-w-xl lg:max-w-2xl"
         >
-          <SearchIcon className="h-6 text-blue-500 hidden sm:inline-flex" />
+          <SearchIcon className="h-5 mr-3 text-gray-500" />
           <input
             type="text"
             className="flex-grow focus:outline-none"
             // value={input}
             // onChange={(e) => setInput(e.target.value)}
           />
-          <MicrophoneIcon
-            className="mr-3 h-6 hidden sm:inline-flex
-        text-blue-500 border-l-2 pl-4 border-gray-300 "
-          />
+          <MicrophoneIcon className="h-5" />
+        </div>
+        <div
+          className="flex flex-col w-1/2 space-y-2 justify-center mt-8
+         sm:space-y-0 sm:flex-row sm:space-x-4"
+        >
+          <button className="btn">Google Search</button>
+          <button className="btn">I'm Feeling Lucky</button>
         </div>
       </form>
 
