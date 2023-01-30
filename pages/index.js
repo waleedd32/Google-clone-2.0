@@ -22,7 +22,6 @@ export default function Home() {
           <p className="link">Gmail</p>
           <p className="link">Images</p>
           {/* Icon */}
-          {/* Avatar */}
           <Avatar url="/avatar.jpg" />{" "}
         </div>
       </header>
