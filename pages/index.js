@@ -3,6 +3,7 @@ import Image from "next/image";
 import Avatar from "../components/Avatar";
 import { MicrophoneIcon, ViewGridIcon } from "@heroicons/react/solid";
 import { SearchIcon } from "@heroicons/react/outline";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       </Head>
 
       {/* Header */}
-      <header className="flex   w-full p-5 justify-between text-sm text-gray-700">
+      <header className="flex w-full p-5 justify-between text-sm text-gray-700">
         {/* Left */}
         <div className="flex space-x-4 items-center">
           <p className="link">About</p>
@@ -35,6 +36,7 @@ export default function Home() {
           src="https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
           height={100}
           width={300}
+          alt="Google Logo"
         />
         <div
           className="flex w-full mt-5 hover:shadow-lg 
@@ -60,6 +62,7 @@ export default function Home() {
       </form>
 
       {/* Footer */}
+      <Footer />
     </div>
   );
 }
