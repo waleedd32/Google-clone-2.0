@@ -7,12 +7,12 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="flex flex-col items-center justify-center h-screen">
+      {" "}
       <Head>
         <title>Google</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       {/* Header */}
       <header className="flex w-full p-5 justify-between text-sm text-gray-700">
         {/* Left */}
@@ -29,7 +29,6 @@ export default function Home() {
           <Avatar url="/avatar.jpg" />{" "}
         </div>
       </header>
-
       {/* Body */}
       <form className="flex flex-col items-center mt-44 flex-grow w-4/5 ">
         <Image
@@ -60,7 +59,6 @@ export default function Home() {
           <button className="btn">I'm Feeling Lucky</button>
         </div>
       </form>
-
       {/* Footer */}
       <Footer />
     </div>
