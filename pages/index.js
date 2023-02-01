@@ -6,6 +6,10 @@ import { SearchIcon } from "@heroicons/react/outline";
 import Footer from "../components/Footer";
 
 export default function Home() {
+  const search = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       {" "}
@@ -55,8 +59,12 @@ export default function Home() {
           className="flex flex-col w-1/2 space-y-2 justify-center mt-8
          sm:space-y-0 sm:flex-row sm:space-x-4"
         >
-          <button className="btn">Google Search</button>
-          <button className="btn">I'm Feeling Lucky</button>
+          <button onClick={search} className="btn">
+            Google Search
+          </button>
+          <button onClick={search} className="btn">
+            I'm Feeling Lucky
+          </button>
         </div>
       </form>
       {/* Footer */}
