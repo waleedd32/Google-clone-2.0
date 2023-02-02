@@ -5,10 +5,21 @@ import { MicrophoneIcon, ViewGridIcon } from "@heroicons/react/solid";
 import { SearchIcon } from "@heroicons/react/outline";
 import Footer from "../components/Footer";
 import { useRef } from "react";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
+  const searchInputRef = useRef(null);
+
   const search = (e) => {
     e.preventDefault();
+    const term = searchInputRef.current.value;
+    console.log("You hit search button >>", term);
+
+    if (!term) return;
+
+    router.push(`/search?term=${term}`);
+    // history.push("/search");
   };
 
   return (
@@ -49,6 +60,7 @@ export default function Home() {
         >
           <SearchIcon className="h-5 mr-3 text-gray-500" />
           <input
+            ref={searchInputRef}
             type="text"
             className="flex-grow focus:outline-none"
             // value={input}
