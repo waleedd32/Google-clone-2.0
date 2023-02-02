@@ -4,6 +4,7 @@ import Avatar from "../components/Avatar";
 import { MicrophoneIcon, ViewGridIcon } from "@heroicons/react/solid";
 import { SearchIcon } from "@heroicons/react/outline";
 import Footer from "../components/Footer";
+import { useRef } from "react";
 
 export default function Home() {
   const search = (e) => {
@@ -36,10 +37,10 @@ export default function Home() {
       {/* Body */}
       <form className="flex flex-col items-center mt-44 flex-grow w-4/5 ">
         <Image
-          src="https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+          src="/Jebordoq.png"
           height={100}
           width={300}
-          alt="Google Logo"
+          alt="Jebordoq Logo"
         />
         <div
           className="flex w-full mt-5 hover:shadow-lg 
@@ -60,7 +61,7 @@ export default function Home() {
          sm:space-y-0 sm:flex-row sm:space-x-4"
         >
           <button onClick={search} className="btn">
-            Google Search
+            Jebordoq Search
           </button>
           <button onClick={search} className="btn">
             I'm Feeling Lucky
