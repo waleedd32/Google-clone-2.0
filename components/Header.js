@@ -1,3 +1,4 @@
+import { XIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useRef } from "react";
@@ -24,6 +25,11 @@ function Header() {
           className="flex-grow w-full focus:outline-none"
           type="text"
           placeholder="Search"
+        />
+        <XIcon
+          className="h-7 sm:mr-3 text-gray-500 cursor-pointer transition 
+        duration-100 transform hover:scale-125 "
+          onClick={() => (searchInputRef.current.value = "")}
         />
       </form>
     </div>
