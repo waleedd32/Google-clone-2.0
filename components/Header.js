@@ -9,6 +9,13 @@ function Header() {
 
   const search = (e) => {
     e.preventDefault();
+    const term = searchInputRef.current.value;
+    console.log("You hit search button >>", term);
+
+    if (!term) return;
+
+    router.push(`/search?term=${term}`);
+    // history.push("/search");
   };
 
   return (
