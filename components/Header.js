@@ -7,6 +7,10 @@ function Header() {
   const router = useRouter();
   const searchInputRef = useRef(null);
 
+  const search = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div>
       <Image
@@ -36,6 +40,7 @@ function Header() {
         text-blue-500 border-l-2 pl-4 border-gray-300 "
         />
         <SearchIcon className="h-6 text-blue-500 hidden sm:inline-flex" />
+        <button hidden type="submit" onClick={search}></button>
       </form>
     </div>
   );
