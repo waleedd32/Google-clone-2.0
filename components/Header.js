@@ -1,4 +1,4 @@
-import { MicrophoneIcon, XIcon } from "@heroicons/react/solid";
+import { MicrophoneIcon, SearchIcon, XIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useRef } from "react";
@@ -35,6 +35,7 @@ function Header() {
           className="mr-3 h-6 hidden sm:inline-flex
         text-blue-500 border-l-2 pl-4 border-gray-300 "
         />
+        <SearchIcon className="h-6 text-blue-500 hidden sm:inline-flex" />
       </form>
     </div>
   );
