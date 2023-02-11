@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <header className="sticky top-0 bg-white">
-      <div>
+      <div className="flex w-full p-6 items-center">
         <Image
           src="/Jebordoq.png"
           height={40}
