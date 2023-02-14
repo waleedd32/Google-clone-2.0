@@ -51,7 +51,7 @@ function Header() {
           <SearchIcon className="h-6 text-blue-500 hidden sm:inline-flex" />
           <button hidden type="submit" onClick={search}></button>
         </form>
-        <Avatar url="/avatar.jpg" />
+        <Avatar className="ml-auto" url="/avatar.jpg" />
       </div>
     </header>
   );
