@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderOption from "./HeaderOption";
-import { SearchIcon } from "@heroicons/react/outline";
+import { PhotographIcon, SearchIcon } from "@heroicons/react/outline";
 
 function HeaderOptions() {
   return (
@@ -8,6 +8,7 @@ function HeaderOptions() {
       {/* Left */}
       <div className="flex space-x-6">
         <HeaderOption Icon={SearchIcon} title="All" selected />
+        <HeaderOption Icon={PhotographIcon} title="Images" />
       </div>
       {/* Right */}
       <div className="flex space-x-4">

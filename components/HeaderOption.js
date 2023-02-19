@@ -1,7 +1,11 @@
 import React from "react";
 
-function HeaderOption() {
-  return <div>HeaderOption</div>;
+function HeaderOption({ Icon, title, selected }) {
+  return (
+    <div className={`flex`}>
+      <Icon className="h-4" />
+    </div>
+  );
 }
 
 export default HeaderOption;
