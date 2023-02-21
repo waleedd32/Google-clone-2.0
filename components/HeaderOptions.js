@@ -1,6 +1,13 @@
 import React from "react";
 import HeaderOption from "./HeaderOption";
-import { PhotographIcon, SearchIcon } from "@heroicons/react/outline";
+import {
+  DotsVerticalIcon,
+  MapIcon,
+  NewspaperIcon,
+  PhotographIcon,
+  PlayIcon,
+  SearchIcon,
+} from "@heroicons/react/outline";
 
 function HeaderOptions() {
   return (
@@ -9,6 +16,10 @@ function HeaderOptions() {
       <div className="flex space-x-6">
         <HeaderOption Icon={SearchIcon} title="All" selected />
         <HeaderOption Icon={PhotographIcon} title="Images" />
+        <HeaderOption Icon={PlayIcon} title="Videos" />
+        <HeaderOption Icon={NewspaperIcon} title="News" />
+        <HeaderOption Icon={MapIcon} title="Maps" />
+        <HeaderOption Icon={DotsVerticalIcon} title="More" />
       </div>
       {/* Right */}
       <div className="flex space-x-4">
