@@ -7,6 +7,12 @@ function SearchResults({ results }) {
         About {results.searchInformation?.formattedTotalResults} Results (
         {results.searchInformation?.formattedSearchTime} seconds){" "}
       </p>
+      {results.items?.map((result) => (
+        <div key={result.link} className="max-w-xl mb-8">
+          <div></div>
+          <p>{result.snippet}</p>
+        </div>
+      ))}
     </div>
   );
 }
