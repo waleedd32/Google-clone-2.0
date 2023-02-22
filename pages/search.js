@@ -1,15 +1,18 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import React from "react";
 import Header from "../components/Header";
 import { API_KEY, CONTEXT_KEY } from "../keys";
 import Response from "../Response";
 
 function Search({ results }) {
+  const router = useRouter();
+
   console.log(results);
   return (
     <div>
       <Head>
-        <title> Jebordoq Search</title>
+        <title>{router.query.term} Jebordoq Search</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
