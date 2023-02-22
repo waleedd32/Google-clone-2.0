@@ -1,7 +1,8 @@
-import { MicrophoneIcon, SearchIcon, XIcon } from "@heroicons/react/solid";
 import Image from "next/image";
+import React from "react";
 import { useRouter } from "next/router";
-import React, { useRef } from "react";
+import { useRef } from "react";
+import { MicrophoneIcon, SearchIcon, XIcon } from "@heroicons/react/solid";
 import Avatar from "./Avatar";
 import HeaderOptions from "./HeaderOptions";
 
@@ -19,12 +20,12 @@ function Header() {
     router.push(`/search?term=${term}`);
     // history.push("/search");
   };
-
   return (
     <header className="sticky top-0 bg-white">
       <div className="flex w-full p-6 items-center">
+        {" "}
         <Image
-          src="/Jebordoq.png"
+          src="https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
           height={40}
           width={120}
           onClick={() => router.push("/")}
@@ -54,6 +55,7 @@ function Header() {
         </form>
         <Avatar className="ml-auto" url="/avatar.jpg" />
       </div>
+      {/* HeaderOption */}
       <HeaderOptions />
     </header>
   );
