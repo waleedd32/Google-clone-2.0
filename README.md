@@ -10,14 +10,15 @@ Project uses NEXT.JS for server side rendering and Tailwindcss for styling
 ## Setup an Run
 
 - Clone this repository.
-- Setup Vercel(See below (For free Firebase hosting(deploy))
+- Setup Vercel(See below (For free Vercel hosting(deploy))
 - Create Google account (Get API key)
 - Install Dependencies.
-- After setup Firebase and installed Dependencies, you can run application
+- After setup Vercel and installed Dependencies, you can run application
 
 ### Vercel (this is just for deploying)
 
 - Visit [Vercel](https://vercel.com/login)
+  s
 
 ### Custom search API
 
@@ -27,10 +28,6 @@ Project uses NEXT.JS for server side rendering and Tailwindcss for styling
 ### Create search engine & get context API/Search engine ID
 
 - Create search engine, get context key: [Programmable Search](https://cse.google.com/cse/create/new)
-
-## Dependencies
-
-- [Firebase](https://firebase.google.com/docs)
 
 Made with :heart: by Valid
 
