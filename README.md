@@ -10,15 +10,14 @@ Project uses NEXT.JS for server side rendering and Tailwindcss for styling
 ## Setup an Run
 
 - Clone this repository.
-- Setup Firebase(See below (For free Firebase hosting(deploy))
+- Setup Vercel(See below (For free Firebase hosting(deploy))
 - Create Google account (Get API key)
 - Install Dependencies.
 - After setup Firebase and installed Dependencies, you can run application
 
-### Firebase (this is just for deploying)
+### Vercel (this is just for deploying)
 
-- Visit [console](https://console.firebase.google.com)
-- Create Project. (Project name can be anything.)
+- Visit [Vercel](https://vercel.com/login)
 
 ### Custom search API
 
