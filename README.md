@@ -18,7 +18,6 @@ Project uses NEXT.JS for server side rendering and Tailwindcss for styling
 ### Vercel (this is just for deploying)
 
 - Visit [Vercel](https://vercel.com/login)
-  s
 
 ### Custom search API
 
