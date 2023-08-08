@@ -9,9 +9,16 @@ Jebordoq is a web-based search application powered by the Next.js framework.
 - Search functionality that connects to Google's Custom Search API to get accurate search results.
 - Search page with detailed results
 - Pagination to navigate through search results.
-- Responsive design using Tailwind CSS.
-- Attractive and user-friendly interface with essential icons from Heroicons.
-- Avatars for personalized user experience.
+- Responsive design (for desktops and mobile devices).
+- Dynamic routing through Next.js.
+- Header with navigational links and user avatar.
+
+## Technologies Used:
+
+- Next.js
+- React 18.2
+- TailwindCSS
+- Heroicons
 
 ## Setup an Run
 
