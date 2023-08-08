@@ -1,23 +1,29 @@
-This is search engine Jebordoq (improvements to previous project) and hosted online (on vercel) so can be tried.
-Project uses NEXT.JS for server side rendering and Tailwindcss for styling
+# Jebordoq Search App
+
+Jebordoq is a web-based search application powered by the Next.js framework.
 
 - [Click here to view the project](https://google-clone-nextjs-zeta.vercel.app/)
 
-# Jebordoq
+## Features
 
-- Coded using React Hooks
+- Search functionality that connects to Google's Custom Search API to get accurate search results.
+- Search page with detailed results
+- Pagination to navigate through search results.
+- Responsive design using Tailwind CSS.
+- Attractive and user-friendly interface with essential icons from Heroicons.
+- Avatars for personalized user experience.
 
 ## Setup an Run
 
 - Clone this repository.
-- Setup Vercel(See below (For free Vercel hosting(deploy))
+- Setup Vercel See below (For free Vercel hosting(deploy))
 - Create Google account (Get API key)
 - Install Dependencies.
 - After setup Vercel and installed Dependencies, you can run application
 
-### Vercel (this is just for deploying)
+## Live Demo:
 
-- Visit [Vercel](https://vercel.com/login)
+- The project is deployed on Vercel. You can try out the live version [here](https://vercel.com/login)
 
 ### Custom search API
 
